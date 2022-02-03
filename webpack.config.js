@@ -19,5 +19,13 @@ module.exports = {
         ]
     },
 
-    watch: true
+    watch: true, 
+
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "dist"),
+            watch: true,
+        }, 
+        liveReload: true
+    }
 }
